@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf=8">
+    <title>乃木坂推しメン診断</title>
+    <h1 class="title">推しメン診断〜乃木坂編〜</h1>
+    <p class="exp">質問に答えてオススメのメンバーを見つけよう！</p>
+    <style>
+      h1.title {
+        text-align: center;
+        font-size: 400%;
+      }
+      p.exp {
+        text-align: center;
+        font-size: 200%;
+      }
+    
+      body {
+        
+        flex-wrap: wrap;
+        background-image: url("開けないで/メンバー/画像/乃木坂ロゴ.jpg" );
+        background-size: 300px 300px;
+        background-repeat: no-repeat;
+       }
+      .box{
+        width: 600px;
+        height: 100px;
+        background-color: purple;
+        cursor: pointer;
+        transition: 0.8s;
+        margin:200px auto 200px auto;
+        text-align: center;
+        line-height: 100px;
+        color: white;
+        font-size: 200%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class='box' id="target1">診断を始める</div>
+
+  
+    <script>
+      'use strict';
+
+      const get1 = document.getElementById('target1')
+      
+      get1.addEventListener('click', () =>{
+          window.location.href='開けないで/Q1.html';
+      }
+      );
+
+
+    </script>
+      
+  </body>
+</html>
